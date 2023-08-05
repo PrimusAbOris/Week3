@@ -5,24 +5,19 @@ public class RunnableClass {
 	public static void main(String[] args) {
 		Human guyRoss = new Human();
 		
-		guyRoss.gender = "male";
-		guyRoss.eyeColor = "green";
-		guyRoss.height = "5'8\"";
-		guyRoss.weight = "120";
+		guyRoss.setProperties("male", "5'8\"", "120", "green");
 		
 		System.out.println(guyRoss.getInfo());
 		
 		Human trevorPage = new Human();
 		
-		trevorPage.eyeColor = "brown";
-		trevorPage.height = "5'10\"";
-		trevorPage.gender = "male";
-		trevorPage.weight = "160";
+		trevorPage.setProperties("male", "5'10\"", "160", "brown");
 		
 		System.out.println(trevorPage.getInfo());
 		
 		Human sakuyaIzayoi = new Human();
 		
+		/* Example of the slow way */
 		sakuyaIzayoi.eyeColor = "blue";
 		sakuyaIzayoi.height = "5'9\"";
 		sakuyaIzayoi.weight = "132";
