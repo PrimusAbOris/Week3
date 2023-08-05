@@ -10,7 +10,7 @@ public class RunnableClass {
 		guyRoss.height = "5'8\"";
 		guyRoss.weight = "120";
 		
-		System.out.println(guyRoss);
+		System.out.println(guyRoss.getInfo());
 		
 		Human trevorPage = new Human();
 		
@@ -19,7 +19,16 @@ public class RunnableClass {
 		trevorPage.gender = "male";
 		trevorPage.weight = "160";
 		
-		System.out.println(trevorPage);
+		System.out.println(trevorPage.getInfo());
+		
+		Human sakuyaIzayoi = new Human();
+		
+		sakuyaIzayoi.eyeColor = "blue";
+		sakuyaIzayoi.height = "5'9\"";
+		sakuyaIzayoi.weight = "132";
+		sakuyaIzayoi.gender = "female";
+		
+		System.out.println(sakuyaIzayoi.getInfo());
 	}
 
 }
