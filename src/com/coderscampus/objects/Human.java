@@ -11,7 +11,7 @@ public class Human {
 				", Eye Color: " + eyeColor + " Weight: " + weight;
 	}
 	
-	/* C-ish version
+	/* "C-like" version
 	void setProperties(String _gender, String _height, String _weight,
 			String _eyeColor) {
 		gender = _gender;

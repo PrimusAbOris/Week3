@@ -19,7 +19,7 @@ public class Week3Exercise {
 		System.out.println("The number you typed in was: " + output);
 	}
 	
-	static Integer checkValidity(int number) {
+	public static Integer checkValidity(int number) {
 		if (number < 50 || number > 300) {
 			return null;
 		}
