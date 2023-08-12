@@ -3,12 +3,13 @@ package com.coderscampus.objects;
 public class Loops {
 
 	public static void main(String[] args) {
-		// start point, keep during, thing done each time
-		for(int i = 1; i <= 100; i = i + 1) {
-			System.out.print(i + ": "); //not *ln
-			System.out.println(i * i);
-		}
+		ForLoopExample forExample1 = new ForLoopExample();
+		forExample1.ForLoopExample();
 		
-		System.out.println("Done.");
+		WhileLoopExample whileExample = new WhileLoopExample();
+		whileExample.whileLoopExample1();
+		
+		WhileLoopExample whileExample2 = new WhileLoopExample();
+		whileExample2.whileLoopExample2();
 	}
 }
