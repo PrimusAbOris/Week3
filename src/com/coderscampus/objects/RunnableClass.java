@@ -1,6 +1,7 @@
 package com.coderscampus.objects;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class RunnableClass {
 
@@ -22,7 +23,7 @@ public class RunnableClass {
 			}
 		}
 		System.out.println("YOUR SCORE: " + total);
-		total = 139;
+		
 		if (total > 110 && total < 130) {
 			System.out.println("Nice!");
 		} else if (total >= 130) {
@@ -31,10 +32,13 @@ public class RunnableClass {
 			System.out.println("The quick divine beast jumps over the perpetual mountain.");
 		}
 		if (total == 139) {
-			System.out.print("今夜日白残夢来ます。");
+			System.out.print("今夜日白残夢来ます");
 		}
+		System.out.println("Dice rolling complete. Press Enter to commence human creation.");
+		promptEnterKey();
 		
 		Human refutation = new Human();
+		refutation.eyeColor = dudeString;
 		
 		Human guyRoss = new Human("male", "5'8\"", "120", "green");
 		
@@ -53,6 +57,11 @@ public class RunnableClass {
 		sakuyaIzayoi.height = "5'9\"";
 		sakuyaIzayoi.weight = "132";
 		sakuyaIzayoi.gender = "female";
+	}
+	
+	public static void promptEnterKey() {
+		   Scanner enterBlock = new Scanner(System.in);
+		   enterBlock.nextLine();
 	}
 
 }

@@ -12,7 +12,8 @@ public class Human {
 	
 	Human(String gender, String height, String weight,
 			String eyeColor) {
-		System.out.println("The door to the dark world has been opened.");
+		System.out.println("The door to the dark world has been opened."
+				+ "\nIt emerges...it approaches!");
 		this.gender = gender;
 		this.height = height;
 		this.weight = weight;
@@ -21,7 +22,7 @@ public class Human {
 	
 	String getInfo() {
 		return "Gender: " + gender + ", Height: " + height +
-				", Eye Color: " + eyeColor + " Weight: " + weight;
+				", Eye Color: " + eyeColor + ", Weight: " + weight + "\n";
 	}
 	
 	/* "C-like" version
