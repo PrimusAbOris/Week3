@@ -9,10 +9,32 @@ public class RunnableClass {
 		Random random = new Random();
 		java.lang.String dudeString = "Hello, my dudes!";
 		
+		int total = 0;
+		int next = 0;
 		for (int i = 0; i < 20; i++) {
 			// between 0 and 9, plus 1
-			System.out.println("Can't have a rainbow without 20d10, baby! " + (random.nextInt(10) + 1));
+			next = random.nextInt(10) + 1;
+			total = total + next;
+			System.out.println("Can't have a rainbow without 20d10, baby! " + next);
+			if (next == 10) {
+				System.out.println("HIT!!");
+				total++;
+			}
 		}
+		System.out.println("YOUR SCORE: " + total);
+		total = 139;
+		if (total > 110 && total < 130) {
+			System.out.println("Nice!");
+		} else if (total >= 130) {
+			System.out.println("Incredible! You're the real Ridge Racer!");
+		} else if (total >= 91) {
+			System.out.println("The quick divine beast jumps over the perpetual mountain.");
+		}
+		if (total == 139) {
+			System.out.print("今夜日白残夢来ます。");
+		}
+		
+		Human refutation = new Human();
 		
 		Human guyRoss = new Human("male", "5'8\"", "120", "green");
 		
